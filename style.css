@@ -1,0 +1,141 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Soft gray background */
+}
+
+/* Header and Navigation */
+header {
+    background-color: #007bff; /* Vibrant blue */
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+h1 {
+    color: #333;
+    font-size: 2em;
+}
+
+p {
+    color: #666;
+}
+
+/* Portfolio Section */
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-items img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonials Section */
+.testimonial {
+    background-color: #fff; /* White background for testimonials */
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #007bff; /* Vibrant blue */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .portfolio-items img {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    header {
+        background-image: linear-gradient(to bottom, #007bff, #0056b3);
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    section {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    header {
+        background-image: url('background-image.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+}

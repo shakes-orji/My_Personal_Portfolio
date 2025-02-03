@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <meta name="description" content="Welcome to my portfolio website showcasing my skills, projects, and testimonials.">
+    <meta name="keywords" content="portfolio, web development, testimonials, projects">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h1>Welcome to my portfolio website</h1>
+            <p>This is a brief introduction to my portfolio</p>
+        </section>
+        <!-- About Section -->
+        <section id="about">
+            <h1>About me</h1>
+            <p>This is a page that showcases my skills, experience, and USP</p>
+        </section>
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h1>My portfolio</h1>
+            <p>This is a page that showcases my work</p>
+            <div class="portfolio-items">
+                <img src="https://dummyimage.com/300x200/000/fff" alt="Project 1" class="mobile" onclick="openLightbox(this)">
+                <img src="https://dummyimage.com/600x400/111/fff" alt="Project 2" class="tablet" onclick="openLightbox(this)">
+                <img src="https://dummyimage.com/900x600/222/fff" alt="Project 3" class="desktop" onclick="openLightbox(this)">
+            </div>
+            <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                <span class="close">&times;</span>
+                <img class="lightbox-content" id="lightbox-img">
+            </div>
+        </section>
+        <!-- Testimonials Section -->
+        <section id="testimonials">
+            <h1>Testimonials</h1>
+            <div class="testimonial">
+                <p>"This portfolio is amazing! It showcases my work beautifully."</p>
+                <p>- Client Name</p>
+            </div>
+            <div class="testimonial">
+                <p>"A fantastic experience working with this professional!"</p>
+                <p>- Another Client</p>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact">
+            <h1>Get in touch</h1>
+            <form action="https://formspree.io/f/{your_form_id}" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <div class="social-media">
+            <a href="mailto:your-email@gmail.com" target="_blank">
+                <img src="gmail-logo.png" alt="Gmail" class="social-icon"> Gmail
+            </a>
+            <a href="https://instagram.com/yourprofile" target="_blank">
+                <img src="instagram-logo.png" alt="Instagram" class="social-icon"> Instagram
+            </a>
+            <a href="https://facebook.com/yourprofile" target="_blank">
+                <img src="facebook-logo.png" alt="Facebook" class="social-icon"> Facebook
+            </a>
+            <a href="https://twitter.com/yourprofile" target="_blank">
+                <img src="twitter-logo.png" alt="Twitter" class="social-icon"> Twitter
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">
+                <img src="linkedin-logo.png" alt="LinkedIn" class="social-icon"> LinkedIn
+            </a>
+            <a href="https://github.com/yourprofile" target="_blank">
+                <img src="github-logo.png" alt="GitHub" class="social-icon"> GitHub
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="lightbox.js"></script>
+</body>
+</html>
