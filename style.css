@@ -2,16 +2,18 @@
 
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Updated font */
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa; /* Soft gray background */
+    background: linear-gradient(to right, #f8f9fa, #e0e0e0); /* Gradient background */
+
 }
 
 /* Header and Navigation */
 header {
-    background-color: #007bff; /* Vibrant blue */
+    background: linear-gradient(to right, #007bff, #0056b3); /* Gradient header */
+
     color: #fff;
     padding: 10px 0;
 }
@@ -47,8 +49,10 @@ section {
 }
 
 h1 {
-    color: #333;
-    font-size: 2em;
+    color: #222;
+    font-size: 2.5em; /* Increased font size */
+    font-weight: bold; /* Bold font */
+
 }
 
 p {
@@ -66,13 +70,19 @@ p {
     width: 100%;
     max-width: 300px;
     margin: 10px;
-    border: 2px solid #ccc;
+    border: 2px solid #007bff; /* Changed border color */
+    transition: transform 0.3s; /* Added transition for hover effect */
+
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Testimonials Section */
 .testimonial {
-    background-color: #fff; /* White background for testimonials */
+    background-color: #fdfdfd; /* Light background for testimonials */
+    border: 1px solid #ccc;
+    padding: 20px; /* Increased padding */
+    border-radius: 10px; /* Rounded corners */
+
     border: 1px solid #ccc;
     padding: 15px;
     margin: 10px 0;
@@ -97,8 +107,11 @@ form input, form textarea {
 }
 
 form button {
-    padding: 10px;
-    background-color: #007bff; /* Vibrant blue */
+    padding: 12px; /* Increased padding */
+    background-color: #28a745; /* Changed to green */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Added transition */
+
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -106,7 +119,8 @@ form button {
 }
 
 form button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #218838; /* Darker green on hover */
+
 }
 
 /* Responsive Design */
